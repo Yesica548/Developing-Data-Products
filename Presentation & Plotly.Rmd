@@ -1,0 +1,32 @@
+---
+title: "Developing Data Products"
+author: "Yesica Jasive Buitrago Sosa"
+date: "12/7/2021"
+output: html_document
+---
+
+## Peer-graded Assignment: R Markdown Presentation & Plotly
+
+# Instructions
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+# Plot
+
+```{r}
+library(ggplot2)
+library(plotly)
+```
+
+```{r}
+library(gapminder)
+
+p <- gapminder %>%
+  filter(year==1997) %>%
+  ggplot( aes(gdpPercap, lifeExp, size = pop, color=continent)) +
+  geom_point() +
+  theme_bw()
+
+ggplotly(p)
+```
+
