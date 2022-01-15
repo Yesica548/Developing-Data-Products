@@ -24,11 +24,11 @@ Using PageUp and PageDown keys all the slides can be traversed.
 
 Click the Below Link for the Application.
 
-....
+https://yesica488.shinyapps.io/Shiny/#1
 
 Click the link below for compiled project files on gitub repo.
 
-.....
+https://github.com/Yesica548/Developing-Data-Products.git
 
 ## Data Used
 The data used for this application is diamonds data set, which is part of ggplot2 package. Containing information about 53940 diamonds with 10 variables.
